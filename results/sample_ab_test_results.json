@@ -1,0 +1,46 @@
+{
+  "semantic_edit_quality": {
+    "lsp": 90.0,
+    "target": "95-100%",
+    "status": "PARTIAL",
+    "tests_passed": 9,
+    "tests_failed": 1,
+    "total_tests": 10
+  },
+  "error_detection": {
+    "lsp": 100.0,
+    "status": "NEEDS_BASELINE",
+    "errors_detected": [
+      "undefined_variable",
+      "aws_instance.nonexistent", 
+      "resource aws_s3_bucket \"test\"",
+      "circular dependency",
+      "instance_type = 123",
+      "missing required cidr_block"
+    ]
+  },
+  "performance": {
+    "lsp": {
+      "startup_time": 0.291,
+      "memory_usage": 0.4
+    },
+    "targets": {
+      "startup_time": 0.4,
+      "memory_usage": 100
+    },
+    "status": "VALIDATED"
+  },
+  "claims_validation": {
+    "quality": false,
+    "error_detection": "needs_baseline",
+    "performance": true,
+    "overall_assessment": "2 of 3 claims validated"
+  },
+  "timestamp": "2024-07-05T10:25:00Z",
+  "test_environment": {
+    "terraform_version": "1.5.0",
+    "terraform_ls_version": "0.31.0", 
+    "serena_version": "latest",
+    "python_version": "3.11.13"
+  }
+}

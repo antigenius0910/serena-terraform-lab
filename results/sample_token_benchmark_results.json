@@ -1,0 +1,104 @@
+{
+  "total_scenarios": 10,
+  "overall_efficiency_gain": 83.0,
+  "average_efficiency_improvement": 69.0,
+  "average_context_reduction": 99.0,
+  "total_token_savings": 19007,
+  "lsp_success_rate": 100.0,
+  "non_lsp_success_rate": 100.0,
+  "cost_savings": 0.4629,
+  "cost_efficiency": 67.1,
+  "best_scenario": "Find all VPC resources",
+  "best_efficiency": 96.7,
+  "worst_scenario": "Find all outputs",
+  "worst_efficiency": -61.8,
+  "scenarios": [
+    {
+      "scenario": "Find all VPC resources",
+      "lsp_tokens": 67,
+      "non_lsp_tokens": 2058,
+      "token_savings": 1991,
+      "efficiency_improvement": 96.7,
+      "context_reduction": 99.1
+    },
+    {
+      "scenario": "Find all security groups",
+      "lsp_tokens": 674,
+      "non_lsp_tokens": 2059,
+      "token_savings": 1385,
+      "efficiency_improvement": 67.3,
+      "context_reduction": 99.1
+    },
+    {
+      "scenario": "Find all variables",
+      "lsp_tokens": 899,
+      "non_lsp_tokens": 1135,
+      "token_savings": 236,
+      "efficiency_improvement": 20.8,
+      "context_reduction": 98.5
+    },
+    {
+      "scenario": "Find all outputs",
+      "lsp_tokens": 1275,
+      "non_lsp_tokens": 788,
+      "token_savings": -487,
+      "efficiency_improvement": -61.8,
+      "context_reduction": 97.9
+    },
+    {
+      "scenario": "Find database-related resources",
+      "lsp_tokens": 340,
+      "non_lsp_tokens": 3927,
+      "token_savings": 3587,
+      "efficiency_improvement": 91.3,
+      "context_reduction": 99.5
+    },
+    {
+      "scenario": "Find load balancer configuration",
+      "lsp_tokens": 173,
+      "non_lsp_tokens": 2820,
+      "token_savings": 2647,
+      "efficiency_improvement": 93.9,
+      "context_reduction": 99.3
+    },
+    {
+      "scenario": "Find all AWS instances",
+      "lsp_tokens": 69,
+      "non_lsp_tokens": 2058,
+      "token_savings": 1989,
+      "efficiency_improvement": 96.6,
+      "context_reduction": 99.1
+    },
+    {
+      "scenario": "Find Auto Scaling configuration",
+      "lsp_tokens": 172,
+      "non_lsp_tokens": 3927,
+      "token_savings": 3755,
+      "efficiency_improvement": 95.6,
+      "context_reduction": 99.5
+    },
+    {
+      "scenario": "Find provider configuration",
+      "lsp_tokens": 110,
+      "non_lsp_tokens": 2059,
+      "token_savings": 1949,
+      "efficiency_improvement": 94.7,
+      "context_reduction": 99.1
+    },
+    {
+      "scenario": "Find terraform blocks",
+      "lsp_tokens": 103,
+      "non_lsp_tokens": 2058,
+      "token_savings": 1955,
+      "efficiency_improvement": 95.0,
+      "context_reduction": 99.1
+    }
+  ],
+  "timestamp": "2024-07-05T10:30:00Z",
+  "test_environment": {
+    "terraform_version": "1.5.0",
+    "terraform_ls_version": "0.31.0",
+    "serena_version": "latest",
+    "python_version": "3.11.13"
+  }
+}
